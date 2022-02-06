@@ -1,6 +1,3 @@
-import javax.swing.*;
-import java.net.UnknownServiceException;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 // The Main class.
@@ -30,29 +27,29 @@ public class Main {
                     "project details.\n5: Exit.");
             int userChoice = userInput.nextInt();
 
-            // If the choice is '1' the then the user is promted to enter the new deadline for the project.
+            // If the choice is '1' the then the user is prompted to enter the new deadline for the project.
             if (userChoice == 1) {
-                Scanner changeDate = new Scanner(System.in);
                 System.out.println("Please enter the new deadline for the project.");
-                String newDate = changeDate.nextLine();
+                userInput.nextLine();
+                String newDate = userInput.nextLine();
                 // Using the 'setDeadline' method created in the Project class.
                 firstProject.setDeadline(newDate);
             }
 
             // If the user chooses '2' then the program will prompt to enter the new total that has been paid.
             else if (userChoice == 2) {
-                Scanner changeTotalPaid = new Scanner(System.in);
                 System.out.println("Please enter the new total amount paid to date.");
-                Double newTotal = changeTotalPaid.nextDouble();
+                userInput.nextLine();
+                Double newTotal = userInput.nextDouble();
                 // This is useing the 'setTotalPaid' created in the Project class to change the totalPaid.
                 firstProject.setTotalPaid(newTotal);
             }
 
             // This option allows the user to change the contractors contact details.
             else if (userChoice == 3) {
-                Scanner changeContractorsContact = new Scanner(System.in);
                 System.out.println("Please enter the new number for the contractor.");
-                String newContact = changeContractorsContact.nextLine();
+                userInput.nextLine();
+                String newContact = userInput.nextLine();
                 firstProject.getContractor().setNumber(newContact);
             }
 
@@ -108,7 +105,6 @@ public class Main {
         // Creating the project object using all the users entered data and then returning it.
         Project currentProject = new Project(projectNumber, projectName, buildingType, projectAddress, erfNumber,
                 totalFee, totalPaid, deadline, architect, contractor, customer);
-
 
         return currentProject;
     }
