@@ -1,33 +1,74 @@
-// This class will be used for the architect, contractor and customer objects.
-public class Person {
-    String role;
-    String name;
-    String number;
-    String email;
-    String address;
+/**
+ * This class is responsible for creating object for the architect, contractor and customer.
+ *
+ * It is passed into the 'Project.java' class.
+ */
 
-    // Creating the constructor for the Person class
+// This class is for creating a person object and is passed into the 'Project.java' class.
+public class Person {
+    private String role;
+    private String name;
+    private String number;
+    private String email;
+    private String address;
+
+    // Constructor for the class.
     public Person(String role, String name, String number, String email, String address) {
-        this.role = role;
-        this.name = name;
-        this.number = number;
-        this.email = email;
-        this.address = address;
+        this.setRole(role);
+        this.setName(name);
+        this.setNumber(number);
+        this.setEmail(email);
+        this.setAddress(address);
     }
 
-    // This is used to change the number of the contractor at a later stage by tapping into '.setNumber()'.
+    // This method is for formatting the output when the Person object is printed.
+    public String toString() {
+        String output = "\nDetails for: " + getRole();
+        output += "\nName: " + getName();
+        output += "\nNumber: " + getNumber();
+        output += "\nEmail: " + getEmail();
+        output += "\nAddress: " + getAddress();
+
+        return output;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getNumber() {
+        return number;
+    }
+
     public void setNumber(String number) {
         this.number = number;
     }
 
-    // This method is used to store all the details for this class and return it in a readable format.
-    public String toString() {
-        String output = "\nDetails for: " + role;
-        output += "\nName: " + name;
-        output += "\nNumber: " + number;
-        output += "\nEmail: " + email;
-        output += "\nAddress: " + address;
+    public String getEmail() {
+        return email;
+    }
 
-        return output;
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 }

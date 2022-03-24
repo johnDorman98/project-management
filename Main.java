@@ -1,8 +1,24 @@
-// The Main class.
+/**
+ * This is a program to manage projects for an example company.
+ *
+ * <br>
+ *
+ * Below I am declaring the main class and method.
+ *
+ * <br>
+ *
+ * It will call the primary method that handles most of the program and will explain further within the
+ * 'HandleUserInput' class.
+ *
+ * <br>
+ *
+ * @author John Dorman
+ * @version 2.00, 16/03/2022
+ */
 public class Main {
-    // The main method to run the program in this case it calls the 'showMenu()' method for creating the project.
     public static void main(String[] args) {
-        // The 'handleUserInput' contains the methods needed to get all the information from the user.
         HandleUserInput.showMenu();
+
     }
 }
+
