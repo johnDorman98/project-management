@@ -7,13 +7,11 @@
 ## Features
  
  * Allows the user to capture the details that will be used to create a new project object.
- * The user is able to update or change the following information.
-   * Change the due date of the project.
-   * Change the total amount of the fee paid to date.
-   * Update a contractor’s contact details.
-   * View the finalised project details with the updated details.
-
- * The program will receive updates at a later date adding new features and functionality to it.
+ * The user is able to update or change the details of the project.
+ * The user is able to view uncompleted or overdue tasks.
+ * The user is able to update the completion status for a project by using the project number.
+ * The program reads projects for a text file and stores it allowing the user to add to the list of projects.
+ * The user is able to add projects with updated details to the text file.
 
 ## Installation
 
