@@ -65,14 +65,16 @@ public class Project {
             try {
                 for (Project project : projectsList) {
                     String projectInfoFormatted = String.format("%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, " +
-                                "%s, %s, %s, %s, %s, %s, %s, %s", project.getProjectNumber(), project.getProjectName(),
-                        project.getBuildingType(), project.getProjectAddress(), project.getErfNumber(), project.getTotalFee(),
-                        project.getTotalPaid(), project.getDeadline(), project.getCompletion(), project.architect.getRole(),
-                        project.architect.getName(), project.architect.getNumber(), project.architect.getEmail(),
-                        project.architect.getAddress(), project.contractor.getRole(), project.contractor.getName(),
-                        project.contractor.getNumber(), project.contractor.getEmail(), project.contractor.getAddress(),
-                        project.customer.getRole(), project.customer.getName(), project.customer.getNumber(),
-                        project.customer.getEmail(), project.customer.getAddress());
+                                "%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s", project.getProjectNumber(),
+                            project.getProjectName(), project.getBuildingType(), project.getProjectAddress(),
+                            project.getErfNumber(), project.getTotalFee(), project.getTotalPaid(), project.getDeadline(),
+                            project.getCompletion(), project.architect.getRole(), project.architect.getfName(),
+                            project.architect.getlName(), project.architect.getNumber(), project.architect.getEmail(),
+                            project.architect.getAddress(), project.contractor.getRole(), project.contractor.getfName(),
+                            project.contractor.getlName(), project.contractor.getNumber(), project.contractor.getEmail(),
+                            project.contractor.getAddress(), project.customer.getRole(), project.customer.getfName(),
+                            project.customer.getfName(), project.customer.getNumber(), project.customer.getEmail(),
+                            project.customer.getAddress());
 
                     testWrite.write(projectInfoFormatted + "\r\n");
             }

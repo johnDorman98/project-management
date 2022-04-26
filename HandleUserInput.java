@@ -168,7 +168,7 @@ public class HandleUserInput {
                         "paid to date: "));
                 String deadline = JOptionPane.showInputDialog("Please enter the deadline for the project e.g. " +
                         "'15/04/2022': ");
-                String completion = JOptionPane.showInputDialog("Is the project compelted please type e.g. 'yes' or " +
+                String completion = JOptionPane.showInputDialog("Is the project completed please type e.g. 'yes' or " +
                         "'no'.");
 
                 /*
@@ -178,6 +178,11 @@ public class HandleUserInput {
                 Person architect = addPerson("Architect");
                 Person contractor = addPerson("Contractor");
                 Person customer = addPerson("Customer");
+
+                if (projectName.equals("")) {
+                    projectName = buildingType + " " + customer.getlName();
+                    System.out.println("Project name has been left blank and has been set to " + projectName);
+                }
 
                 Project projectDetails = new Project(projectNumber, projectName, buildingType, projectAddress,
                         erfNumber, totalFee, totalPaid, deadline, completion, architect, contractor, customer);
@@ -198,19 +203,18 @@ public class HandleUserInput {
     public static Person addPerson(String personsRole) {
         while (true) {
             try {
-                String name = JOptionPane.showInputDialog("\nPlease enter the name of the " + personsRole);
+                String firstName = JOptionPane.showInputDialog("\nPlease enter the first name of the " + personsRole);
+                String lastName = JOptionPane.showInputDialog("Please enter the last name of the " + personsRole);
                 String number = JOptionPane.showInputDialog("Please enter the number of the " + personsRole);
                 String email = JOptionPane.showInputDialog("Please enter the email for the " + personsRole);
                 String address = JOptionPane.showInputDialog("Please enter the address for the " + personsRole);
 
-                if (name.equals("") || number.equals("") || email.equals("") || address.equals("")) {
+                if (firstName.equals("") || lastName.equals("") || number.equals("") || email.equals("") || address.equals("")) {
                     continue;
                 }
 
-                // Creating a new Person object using the users information they have entered.
-
                 // Returning the new details object.
-                return new Person(personsRole, name, number, email, address);
+                return new Person(personsRole, firstName, lastName, number, email, address);
             }
             catch (IllegalArgumentException e) {
                 System.out.println("Error sorry please try again.");

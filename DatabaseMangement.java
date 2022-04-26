@@ -17,7 +17,7 @@ public class DatabaseMangement {
     public static ArrayList<Project> readFile() {
         ArrayList<Project> projectList = new ArrayList<>();
             try {
-                File path = new File("projects.txt");
+                File path = new File("Task 2/projects.txt");
                 Scanner readFile = new Scanner(path);
 
                 while (readFile.hasNextLine()) {
@@ -35,27 +35,30 @@ public class DatabaseMangement {
                     String completion = splitProject[8];
 
                     String architectRole = splitProject[9];
-                    String architectName = splitProject[10];
-                    String architectNumber = splitProject[11];
-                    String architectEmail = splitProject[12];
-                    String architectAddress = splitProject[13];
-                    Person architectDetails = new Person(architectRole, architectName, architectNumber, architectEmail,
+                    String architectFName = splitProject[10];
+                    String architectLName = splitProject[11];
+                    String architectNumber = splitProject[12];
+                    String architectEmail = splitProject[13];
+                    String architectAddress = splitProject[14];
+                    Person architectDetails = new Person(architectRole, architectFName, architectLName, architectNumber, architectEmail,
                             architectAddress);
 
-                    String contractorRole = splitProject[14];
-                    String contractorName = splitProject[15];
-                    String contractorNumber = splitProject[16];
-                    String contractorEmail = splitProject[17];
-                    String contractorAddress = splitProject[18];
-                    Person contractorDetails = new Person(contractorRole, contractorName, contractorNumber,
+                    String contractorRole = splitProject[15];
+                    String contractorFName = splitProject[16];
+                    String contractorLName = splitProject[17];
+                    String contractorNumber = splitProject[18];
+                    String contractorEmail = splitProject[19];
+                    String contractorAddress = splitProject[20];
+                    Person contractorDetails = new Person(contractorRole, contractorFName, contractorLName, contractorNumber,
                             contractorEmail, contractorAddress);
 
-                    String customerRole = splitProject[19];
-                    String customerName = splitProject[20];
-                    String customerNumber = splitProject[21];
-                    String customerEmail = splitProject[22];
-                    String customerAddress = splitProject[23];
-                    Person customerDetails = new Person(customerRole, customerName, customerNumber, customerEmail,
+                    String customerRole = splitProject[21];
+                    String customerFName = splitProject[22];
+                    String customerLName = splitProject[23];
+                    String customerNumber = splitProject[24];
+                    String customerEmail = splitProject[25];
+                    String customerAddress = splitProject[26];
+                    Person customerDetails = new Person(customerRole, customerFName, customerLName, customerNumber, customerEmail,
                             customerAddress);
 
                     Project projectDetails = new Project(number, name, building, address, erf, fee, paid, deadline,
