@@ -1,3 +1,7 @@
+import java.sql.SQLException;
+
+// This is the main that will that will call and run the primary method from 'HandleUserInput'.
+
 /**
  * This is a program to manage projects for an example company.
  *
@@ -13,12 +17,11 @@
  * <br>
  *
  * @author John Dorman
- * @version 2.00, 16/03/2022
+ * @version 3.00, 09/05/2022
  */
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
         HandleUserInput.showMenu();
-
     }
 }
 

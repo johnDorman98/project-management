@@ -3,10 +3,6 @@
  * the list of projects, To the text file when the user selects that option in when the program runs.
  */
 
-// Imports for the program.
-import java.io.*;
-import java.util.ArrayList;
-
 // This class will be used for creating the Projects.
 public class Project {
     private String projectNumber;
@@ -17,15 +13,17 @@ public class Project {
     private double totalFee;
     private double totalPaid;
     private String deadline;
+    private String completionDate;
     private String completion;
+    private Person engineer;
     private Person architect;
     private Person contractor;
     private Person customer;
 
     // The constructor for the 'Project' class assigning data to the various objects.
     public Project(String projectNumber, String projectName, String buildingType, String projectAddress, String erfNumber,
-                   double totalFee, double totalPaid, String deadline, String completion, Person architect,
-                   Person contractor, Person customer) {
+                   double totalFee, double totalPaid, String deadline, String completionDate, String completion,Person engineer,
+                   Person architect, Person contractor, Person customer) {
         this.setProjectNumber(projectNumber);
         this.setProjectName(projectName);
         this.setBuildingType(buildingType);
@@ -34,7 +32,9 @@ public class Project {
         this.setTotalFee(totalFee);
         this.setTotalPaid(totalPaid);
         this.setDeadline(deadline);
+        this.setCompletionDate(completionDate);
         this.setCompletion(completion);
+        this.setEngineer(engineer);
         this.setArchitect(architect);
         this.setContractor(contractor);
         this.setCustomer(customer);
@@ -50,37 +50,15 @@ public class Project {
         output += "\nThe Total Fee For The Project: " + getTotalFee();
         output += "\nThe Total Amount Paid To Date: " + getTotalPaid();
         output += "\nThe Deadline For The Project: " + getDeadline();
+        output += "\nThe Completion Date For The Project: " + getCompletionDate();
         output += "\nIs the project completed: " + getCompletion() + "\n";
 
+        output += engineer.toString();
         output += architect.toString();
         output += contractor.toString();
         output += customer.toString();
 
         return output;
-    }
-
-    // This method when called will format and write the values of the Project objects to 'projects.txt'.
-    public static void writeToText(ArrayList<Project> projectsList) throws IOException {
-        FileWriter testWrite = new FileWriter("projects.txt");
-            try {
-                for (Project project : projectsList) {
-                    String projectInfoFormatted = String.format("%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, " +
-                                "%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s", project.getProjectNumber(),
-                            project.getProjectName(), project.getBuildingType(), project.getProjectAddress(),
-                            project.getErfNumber(), project.getTotalFee(), project.getTotalPaid(), project.getDeadline(),
-                            project.getCompletion(), project.architect.getRole(), project.architect.getfName(),
-                            project.architect.getlName(), project.architect.getNumber(), project.architect.getEmail(),
-                            project.architect.getAddress(), project.contractor.getRole(), project.contractor.getfName(),
-                            project.contractor.getlName(), project.contractor.getNumber(), project.contractor.getEmail(),
-                            project.contractor.getAddress(), project.customer.getRole(), project.customer.getfName(),
-                            project.customer.getfName(), project.customer.getNumber(), project.customer.getEmail(),
-                            project.customer.getAddress());
-
-                    testWrite.write(projectInfoFormatted + "\r\n");
-            }
-            } finally {
-                testWrite.close();
-        }
     }
 
     // Setters and getters.
@@ -148,12 +126,24 @@ public class Project {
         this.deadline = deadline;
     }
 
+    public String getCompletionDate() {
+        return completionDate;
+    }
+
+    public void setCompletionDate(String completionDate) {
+        this.completionDate = completionDate;
+    }
+
     public String getCompletion() {
         return completion;
     }
 
     public void setCompletion(String completion) {
         this.completion = completion;
+    }
+
+    public void setEngineer(Person engineer) {
+        this.engineer = engineer;
     }
 
     public void setArchitect(Person architect) {
@@ -167,4 +157,21 @@ public class Project {
     public void setCustomer(Person customer) {
         this.customer = customer;
     }
+
+    public Person getEngineer() {
+        return engineer;
+    }
+
+    public Person getArchitect() {
+        return architect;
+    }
+
+    public Person getContractor() {
+        return contractor;
+    }
+
+    public Person getCustomer() {
+        return customer;
+    }
 }
+

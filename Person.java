@@ -28,6 +28,7 @@ public class Person {
         String output = "\nDetails for: " + getRole();
         output += "\nFirst name: " + getfName();
         output += "\nLast name: " + getlName();
+        output += "\nContact number: " + getNumber();
         output += "\nEmail: " + getEmail();
         output += "\nAddress: " + getAddress() + "\n";
 
