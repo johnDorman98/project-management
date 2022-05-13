@@ -80,7 +80,7 @@
        * After the Main file is open you should have a banner at the top of the screen, promting you to setup your JDK version click on setup JDK and selecting your   JDK Version
        * Before you can run the program you will need to make minor changes for the program to connect to your database.
          * In order to make these changes you will need to navigate to DatabaseManagement.java file.
-           * once there, Edit the variables user and pass, Placing your username and password for your MySQL login.
+           * once there, edit the variables user and pass placing your username and password for your MySQL login.
        * With the JDK setup you can now right click on the code and click on Run 'Main.main()'.
        * The program should now be running and will present you with a menu giving you options for you to select from.
 
