@@ -74,7 +74,7 @@
      * Click on open and navigate to where you have stored the extracted the program folder then click open and the program should now be opened in IntelliJ.
        * You should have a screen open similar to the image below.
        
-       ![Setup Project](https://user-images.githubusercontent.com/98963869/168249022-d387d73f-3aa1-4b9f-80e3-f984c5c6edd8.png)
+       ![Setup Project](https://user-images.githubusercontent.com/98963869/168250440-97dcc4be-a917-4dc4-8360-9678b278b36a.png)
        
        * If its still blank for you but you can see the file names then double click on Main in order to open it as shown above.
        * After the Main file is open if you have a banner at the top like in the image simply click on setup JDK selecting the JDK version you have.
