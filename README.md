@@ -52,7 +52,7 @@
        
   * Now that JDK has been installed correctly we can now install IntelliJ clicking [here](https://www.jetbrains.com/idea/download/?fromIDE=#section=windows) for the download page then download the community version for your OS.
   
-    ![Download the community version](https://www.jetbrains.com/idea/download/?fromIDE=#section=windows)
+    ![Download the community version](https://user-images.githubusercontent.com/98963869/152643639-396bad1c-0995-43c9-98e0-45c2363f30b7.png)
     
     * Once it has been downloaded run the installer to download IntelliJ.
   
