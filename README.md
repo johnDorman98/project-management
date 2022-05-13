@@ -36,7 +36,7 @@
      * Click [here](https://www.oracle.com/java/technologies/downloads/) to go to the JDK download page then download the installer for your Operating System (OS).
      * Once it has been downloaded run the installer and follow the installers instructions, After the installation is finished you can click close.
      * You can find a full guide on how to install JDK [here](https://docs.oracle.com/en/java/javase/17/install/overview-jdk-installation.html#GUID-8677A77F-231A-40F7-98B9-1FD0B48C346A__INSTALLINGTHEJDKANDJREONMICROSOFTWI-E04E8B17)
-     * Next lets confirm that JDK has been installed correctly, To do so type the following into the command-line/terminal.
+     * Next lets confirm that JDK has been installed correctly, to do so type the following into the command-line/terminal.
      * *java --version* and you should see something similar to whats below
      
        ```
@@ -58,18 +58,18 @@
   
   * IntelliJ and JDK should both now be installed on your computer and you can now download or clone the program from github saving it somewhere you can find later.
 
-  * With the latest changes to work you will also need to have MYSQL installed for the project to interact with the database.
-    * In the following steps I will help walk you through the setup for MYSQL installation.
-      * Clicking [here](https://dev.mysql.com/doc/refman/8.0/en/installing.html) will take you to mysql documentation on installation then you can select the option that corresponds to you operating system.
+  * With the latest changes to work you will also need to have MySQL installed for the project to interact with the database.
+    * In the following steps I will help walk you through the setup for MySQL installation.
+      * Clicking [here](https://dev.mysql.com/doc/refman/8.0/en/installing.html) will take you to MySQL documentation on installation then you can select the option that corresponds to you operating system.
       * In my case I will select the option for installing on windows and follow along with the instructions there.
       * After downloading the installer from [here](https://dev.mysql.com/downloads/mysql/)
         * Use the installer and complete the installation.
-        * Once you are done installing MYSQL I would recommend to watch a youtube video on how to setup and use it so that you have a better understanding of how it works.
-          * Following that there will also be a .sql file called table_creation, If you import this into your MYSQL workbench it will give you the needed sql statements to setup all the required tables.
+        * Once you are done installing MySQL I would recommend to watch a youtube video on how to setup and use it so that you have a better understanding of how it works.
+          * Following that there will also be a .sql file called table_creation. If you import this into your MySQL workbench it will give you the needed sql statements to setup all the required tables.
     
 <a name="usage"></a>
 ## Usage  
- * To begin using the program for the first time, If you have downloaded the program as a .zip firstly extract it in order to use it within IntelliJ.
+ * To begin using the program for the first time, if you have downloaded the program as a .zip firstly extract it in order to use it within IntelliJ.
    * With the program now downloaded and extracted open IntelliJ and the following steps will help walk you through how to get the program running.
      * Click on open and navigate to where you have stored the extracted the program folder then click open and the program should now be opened in IntelliJ.
        * You should have a screen open similar to the image below.
@@ -77,10 +77,10 @@
        ![Setup Project](https://user-images.githubusercontent.com/98963869/168250440-97dcc4be-a917-4dc4-8360-9678b278b36a.png)
        
        * If its still blank for you but you can see the file names then double click on Main in order to open it as shown above.
-       * After the Main file is open you should have a banner at the top of the screen, Promting you to setup your JDK version click on setup JDK and selecting your   JDK Version
+       * After the Main file is open you should have a banner at the top of the screen, promting you to setup your JDK version click on setup JDK and selecting your   JDK Version
        * Before you can run the program you will need to make minor changes for the program to connect to your database.
          * In order to make these changes you will need to navigate to DatabaseManagement.java file.
-           * once there, Edit the variables user and pass, Placing your username and password for your MYSQL login.
+           * once there, Edit the variables user and pass, Placing your username and password for your MySQL login.
        * With the JDK setup you can now right click on the code and click on Run 'Main.main()'.
        * The program should now be running and will present you with a menu giving you options for you to select from.
 
