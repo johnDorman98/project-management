@@ -12,7 +12,7 @@
 
  This program is a project management system created for an example small structural engineering firm which will allow them to use the program use to keep track of the many projects on which they work.
 
- The project will implement OOP to show my understanding of the topic and will be updated and improved with time.
+ The project will implement OOP (Object Oriented Programming) to show my understanding of the topic and will be updated and improved with time.
  
 <a name="features"></a>
 ## Features 
