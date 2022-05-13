@@ -82,7 +82,7 @@
          * In order to make these changes you will need to navigate to DatabaseManagement.java file.
            * once there, Edit the variables user and pass, Placing your username and password for your MYSQL login.
        * With the JDK setup you can now right click on the code and click on Run 'Main.main()'.
-       * The program should now be running and will ask you to present you with a menu giving you options for you to select from.
+       * The program should now be running and will present you with a menu giving you options for you to select from.
 
 <a name="license"></a>
 ## License 
