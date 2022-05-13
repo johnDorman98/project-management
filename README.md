@@ -36,7 +36,7 @@
      * Click [here](https://www.oracle.com/java/technologies/downloads/) to go to the JDK download page then download the installer for your Operating System (OS).
      * Once it has been downloaded run the installer and follow the installers instructions, After the installation is finished you can click close.
      * You can find a full guide on how to install JDK [here](https://docs.oracle.com/en/java/javase/17/install/overview-jdk-installation.html#GUID-8677A77F-231A-40F7-98B9-1FD0B48C346A__INSTALLINGTHEJDKANDJREONMICROSOFTWI-E04E8B17)
-     * Next lets confirm that JDK has been installed correctly to do so type the following into the command-line/terminal.
+     * Next lets confirm that JDK has been installed correctly, To do so type the following into the command-line/terminal.
      * *java --version* and you should see something similar to whats below
      
        ```
