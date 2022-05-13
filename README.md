@@ -33,7 +33,7 @@
  * In order to run this program you will need to have the Java Development Kit (JDK) and a IDE in this case we will be using IntelliJ.
  * Below I will include instructions for installing JDK and IntelliJ to get it setup and allow you to run the program.
    * Firstly for IntelliJ to work we will need to install JDK. Below will be instructions for that.
-     * Click [here](https://www.oracle.com/java/technologies/downloads/) to go to the JDK download page then download the installer for your operating system (OS).
+     * Click [here](https://www.oracle.com/java/technologies/downloads/) to go to the JDK download page then download the installer for your Operating System (OS).
      * Once it has been downloaded run the installer and follow the installers instructions, After the installation is finished you can click close.
      * You can find a full guide on how to install JDK [here](https://docs.oracle.com/en/java/javase/17/install/overview-jdk-installation.html#GUID-8677A77F-231A-40F7-98B9-1FD0B48C346A__INSTALLINGTHEJDKANDJREONMICROSOFTWI-E04E8B17)
      * Next lets confirm that JDK has been installed correctly to do so type the following into the command-line/terminal.
