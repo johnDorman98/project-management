@@ -7,7 +7,7 @@
 import java.sql.*;
 import java.util.ArrayList;
 
-public class DatabaseMangement {
+public class DatabaseManagement {
     // Variables to be used for connecting and querying statements.
     private static String dbUrl = "jdbc:mysql://localhost:3306/poisepms?useSSL=false";
     private static String user = "altuser";
@@ -43,7 +43,7 @@ public class DatabaseMangement {
             results = statement.executeQuery("SELECT * FROM projects");
 
             while (results.next()) {
-                String number = results.getString("projects.project_number");
+                String number = results.getString("project_number");
                 String name = results.getString("project_name");
                 String building = results.getString("building_type");
                 String address = results.getString("project_address");

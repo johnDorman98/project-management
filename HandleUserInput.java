@@ -25,7 +25,7 @@ public class HandleUserInput {
     // This method shows a menu of options for the user performing various options based on their selection.
     public static void showMenu() throws SQLException {
         // This contains the project objects passed from 'DatabaseManagement'.
-        ArrayList<Project> projectList = DatabaseMangement.readDatabase();
+        ArrayList<Project> projectList = DatabaseManagement.readDatabase();
 
         // This is used to make the while loop run until the user selects '5' to exit the program.
         boolean showUserMenu = true;
@@ -59,7 +59,7 @@ public class HandleUserInput {
                     Project newProject = addProject(projectList);
                     projectList.add(newProject);
                     System.out.println("Your project has been added to list of projects and the database");
-                    DatabaseMangement.writeToDatabase(newProject);
+                    DatabaseManagement.writeToDatabase(newProject);
 
 
                 }
@@ -117,7 +117,7 @@ public class HandleUserInput {
                                             "SET total_fee='"+String.valueOf(newTotalFee)+"'" +
                                             "WHERE project_number='"+selectedProjectNumber+"' " +
                                             "OR project_name='"+selectedProjectName+"'";
-                                    DatabaseMangement.updateDatabase(sqlStatement);
+                                    DatabaseManagement.updateDatabase(sqlStatement);
 
                                 } else if (updateChoice.equalsIgnoreCase("2")) {
                                     double newTotalPaid = Double.parseDouble(JOptionPane.showInputDialog("The current " +
@@ -130,7 +130,7 @@ public class HandleUserInput {
                                             "SET total_paid='"+String.valueOf(newTotalPaid)+"'" +
                                             "WHERE project_number='"+selectedProjectNumber+"' " +
                                             "OR project_name='"+selectedProjectName+"'";
-                                    DatabaseMangement.updateDatabase(sqlStatement);
+                                    DatabaseManagement.updateDatabase(sqlStatement);
 
                                 } else if (updateChoice.equalsIgnoreCase("3")) {
                                     String newDeadline = JOptionPane.showInputDialog("The current deadline for the " +
@@ -143,7 +143,7 @@ public class HandleUserInput {
                                             "SET deadline='"+String.valueOf(newDeadline)+"'" +
                                             "WHERE project_number='"+selectedProjectNumber+"' " +
                                             "OR project_name='"+selectedProjectName+"'";
-                                    DatabaseMangement.updateDatabase(sqlStatement);
+                                    DatabaseManagement.updateDatabase(sqlStatement);
 
                                 }
 
@@ -164,7 +164,7 @@ public class HandleUserInput {
                                             "SET project_status='yes'" +
                                             "WHERE project_number='"+selectedProjectNumber+"' " +
                                             "OR project_name='"+selectedProjectName+"'";
-                                    DatabaseMangement.updateDatabase(updateProjectStatus);
+                                    DatabaseManagement.updateDatabase(updateProjectStatus);
                                     System.out.println("Database has been updated with the new project status.");
 
                                     String chosenCompletionDate = JOptionPane.showInputDialog("Would you like to set the " +
@@ -191,7 +191,7 @@ public class HandleUserInput {
                                             "SET completion_date='"+completionDate+"'" +
                                             "WHERE project_number='"+selectedProjectNumber+"' " +
                                             "OR project_name='"+selectedProjectName+"'";
-                                    DatabaseMangement.updateDatabase(updateCompletionDate);
+                                    DatabaseManagement.updateDatabase(updateCompletionDate);
                                     System.out.println("The database has been updated with the new completion date.");
 
                                     double fee = project.getTotalFee();
@@ -281,7 +281,7 @@ public class HandleUserInput {
                     }
                 }
 
-                // Finally exits the loop.
+                // Finally, exits the loop.
                 else if (userChoice == 5) {
                     System.out.println("Exiting the program.");
                     showUserMenu = false;
@@ -428,7 +428,7 @@ public class HandleUserInput {
     }
 
     /**
-     * This method compares the current projects with the new one and validates it making sure it doesnt have the same
+     * This method compares the current projects with the new one and validates it making sure it doesn't have the same
      * project number or name.
      *
      * @param projects
