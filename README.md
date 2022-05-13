@@ -52,20 +52,20 @@
        
   * Now that JDK has been installed correctly we can now install IntelliJ clicking [here](https://www.jetbrains.com/idea/download/?fromIDE=#section=windows) for the download page then download the community version for your OS.
   
-    ![Download the community version](https://user-images.githubusercontent.com/98963869/152643639-396bad1c-0995-43c9-98e0-45c2363f30b7.png)
+    ![Download the community version](https://user-images.githubusercontent.com/98963869/168249022-d387d73f-3aa1-4b9f-80e3-f984c5c6edd8.png)
     
     * Once it has been downloaded run the installer to download IntelliJ.
   
   * IntelliJ and JDK should both now be installed on your computer and you can now download or clone the program from github saving it somewhere you can find later.
 
-  * With the latest changes to work you will also need to have MySQL installed for the project to interact with the database.
-    * In the following steps I will help walk you through the setup for MySQL installation.
+  * With the latest changes to work you will also need to have MYSQL installed for the project to interact with the database.
+    * In the following steps I will help walk you through the setup for MYSQL installation.
       * Clicking [here](https://dev.mysql.com/doc/refman/8.0/en/installing.html) will take you to mysql documentation on installation then you can select the option that corresponds to you operating system.
       * In my case I will select the option for installing on windows and follow along with the instructions there.
       * After downloading the installer from [here](https://dev.mysql.com/downloads/mysql/)
         * Use the installer and complete the installation.
-        * Once you are done installing MySQL I would recommend to watch a youtube video on how to setup and use it so that you have a better understanding of how it works.
-          * Following that there will also be a .sql file called table_creation, If you import this into your mysql workbench it will give you the the needed sql statements to setup all the required tables.
+        * Once you are done installing MYSQL I would recommend to watch a youtube video on how to setup and use it so that you have a better understanding of how it works.
+          * Following that there will also be a .sql file called table_creation, If you import this into your MYSQL workbench it will give you the needed sql statements to setup all the required tables.
     
 <a name="usage"></a>
 ## Usage  
