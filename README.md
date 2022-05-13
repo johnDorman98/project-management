@@ -69,7 +69,7 @@
     
 <a name="usage"></a>
 ## Usage  
- * To begin using the program firstly if you have downloaded the program as a .zip firstly extract it in order to use it with IntelliJ.
+ * To begin using the program for the first time, If you have downloaded the program as a .zip firstly extract it in order to use it within IntelliJ.
    * With the program now downloaded and extracted open IntelliJ and the following steps will help walk you through how to get the program running.
      * Click on open and navigate to where you have stored the extracted the program folder then click open and the program should now be opened in IntelliJ.
        * You should have a screen open similar to the image below.
